@@ -9,7 +9,9 @@ This repository contains both the backend REST API and the frontend React applic
 
 EvangadiForum/
 ├── Client/
+
 ├── Server/
+
 └── README.md
 
 ---
@@ -85,12 +87,16 @@ git clone https://github.com/Ribka12/EvangadiForum-Individual.git
 
 ### Backend
 cd server
+
 npm install
+
 npm start
 
 ### Frontend
 cd client
+
 npm install
+
 npm start
 
 ---
@@ -104,5 +110,7 @@ Register, log in, ask questions, post answers, and engage with the community.
 ## 👩‍💻 Author
 
 Ribka Mengiste
+
 Software Engineering
+
 Evangadi Network Project
