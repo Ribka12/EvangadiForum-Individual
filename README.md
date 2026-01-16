@@ -81,15 +81,15 @@ EvangadiForum/
 ## ⚙️ Installation & Setup
 
 ### Clone Repository
-git clone https://github.com/Ribka12/EvangadiForum.git
+git clone https://github.com/Ribka12/EvangadiForum-Individual.git
 
 ### Backend
-cd backend
+cd server
 npm install
 npm start
 
 ### Frontend
-cd frontend
+cd client
 npm install
 npm start
 
