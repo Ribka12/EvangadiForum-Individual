@@ -8,6 +8,7 @@ This repository contains both the backend REST API and the frontend React applic
 ## 📁 Project Structure
 
 EvangadiForum/
+
 ├── Client/
 
 ├── Server/
