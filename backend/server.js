@@ -19,6 +19,19 @@ app.use("/api/user", authRoute);
 app.use("/api/question", authMiddleware, questionRoute);
 app.use("/api/answer", authMiddleware, answerRoute);
 
+
+const path = require("path");
+
+const clientBuildPath = path.join(__dirname, "../frontend/dist");
+
+app.use(express.static(clientBuildPath));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(clientBuildPath, "index.html"));
+});
+
+
+
 const PORT = 5000;
 
 async function start() {
