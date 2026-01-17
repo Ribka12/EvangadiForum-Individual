@@ -1,0 +1,227 @@
+.loginContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loginForm {
+  width: 100%;
+  max-width: 460px;
+  padding: 48px;
+  padding-top: 28px;
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f9fbff 100%
+    );
+
+  border: 1px solid rgba(79, 110, 247, 0.18);
+
+  box-shadow:
+    0 40px 80px rgba(79, 110, 247, 0.18),
+    0 12px 24px rgba(0, 0, 0, 0.08);
+
+  position: relative;
+}
+
+
+.loginForm {
+  animation: authFadeIn 0.5s ease;
+}
+
+@keyframes authFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= TEXT ================= */
+.loginTitle {
+  font-size: 26px;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.subText {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.subText a {
+  color: #ff7a00;
+  font-weight: 500;
+}
+
+/* ================= INPUT ================= */
+.formGroup {
+  margin-bottom: 18px;
+}
+
+.formGroup input {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #4f6ef7;
+  box-shadow: 0 0 0 3px rgba(79, 110, 247, 0.15);
+}
+
+/* ================= PASSWORD ================= */
+.passwordWrapper {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #9ca3af;
+  transition: color 0.2s ease;
+}
+
+.eye:hover {
+  color: #4f6ef7;
+}
+
+/* ================= ERROR MESSAGE ================= */
+.errorBox {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+
+  background: linear-gradient(
+    180deg,
+    #fee2e2 0%,
+    #fecaca 100%
+  );
+
+  color: #991b1b;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+
+  border-radius: 10px;
+  border: 1px solid #fca5a5;
+
+  box-shadow:
+    0 8px 16px rgba(239, 68, 68, 0.18);
+}
+
+/* ================= BUTTON ================= */
+.loginBtn {
+  width: 100%;
+  height: 52px;
+  background: #4f6ef7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.loginBtn:hover {
+  background: #7489f4;
+  transform: translatey(3px);
+}
+
+/* ================= LINKS ================= */
+.links {
+  text-align: right;
+  margin-bottom: 18px;
+}
+
+.links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4f6ef7;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease;
+}
+
+.links a:hover {
+  color: #3b5bfd;
+}
+
+.links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.switchText {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.switchText a {
+  margin-left: 4px;
+  font-weight: 600;
+  color: #ff7a00;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.switchText a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease;
+}
+
+.switchText a:hover {
+  color: #e96c00;
+}
+
+.switchText a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.links a:focus,
+.switchText a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 110, 247, 0.25);
+  border-radius: 4px;
+}

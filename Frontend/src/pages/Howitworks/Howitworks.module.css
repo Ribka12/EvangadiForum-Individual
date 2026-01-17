@@ -1,0 +1,99 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+  }
+  
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .step {
+    background: #ffffff;
+    padding: 1.6rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  }
+  
+  .step h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: #f39c12;
+  }
+  
+  .step p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+   /* CTA */
+  .cta {
+   margin-bottom: 50px;
+    background: #4f6ef7;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    margin-bottom: 20px;
+  }
+  
+  .cta button {
+    background: #f7931e;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .cta button:hover{
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.9rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+  
+    .step {
+      padding: 1.3rem;
+    }
+  }
+  

@@ -1,0 +1,138 @@
+.footer {
+  background-color: #1f2937; /* Dark background */
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ---------- LEFT SECTION ---------- */
+.footer_left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer_left img {
+  width: 220px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.footer_left img:hover {
+  transform: scale(1.1);
+}
+
+.footer_desc {
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* Social Icons */
+.social_icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social_icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ffffff50;
+  color: #ffffff;
+  font-size: 24px;
+  transition: all 0.35s ease;
+}
+
+.social_icons a:hover {
+  background: linear-gradient(135deg, #4f6ef7, #6f8cff);
+  border: none;
+  color: #fff;
+  transform: translateY(-6px) scale(1.15);
+  box-shadow: 0 8px 20px rgba(79,110,247,0.5);
+}
+
+/* ---------- MIDDLE & RIGHT SECTIONS ---------- */
+.footer_middle,
+.footer_right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #f1f5f9;
+  letter-spacing: 0.5px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.footer ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer ul li a:hover {
+  color: #4f6ef7;
+  transform: translateX(3px);
+}
+
+/* ---------- FOOTER BOTTOM ---------- */
+.footer_bottom {
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid #ffffff20;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .footer_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .social_icons {
+    justify-content: center;
+  }
+
+  .footer_left,
+  .footer_middle,
+  .footer_right {
+    margin-bottom: 20px;
+  }
+}
