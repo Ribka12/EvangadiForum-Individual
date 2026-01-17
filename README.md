@@ -9,9 +9,9 @@ This repository contains both the backend REST API and the frontend React applic
 
 EvangadiForum/
 
-├── Client/
+├── frontend/
 
-├── Server/
+├── backend/
 
 └── README.md
 
